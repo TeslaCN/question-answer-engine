@@ -1,0 +1,25 @@
+# For a quick start check out our HTTP Requests collection (Tools|HTTP Client|Open HTTP Requests Collection) or
+# paste cURL into the file and request will be converted to HTTP Request format.
+#
+# Following HTTP Request Live Templates are available:
+# * 'gtrp' and 'gtr' create a GET request with or without query parameters;
+# * 'ptr' and 'ptrp' create a POST request with a simple or parameter-like body;
+# * 'mptr' and 'fptr' create a POST request to submit a form with a text or file field (multipart/form-data);
+
+PUT http://192.168.101.4:5269/api/qa
+Content-Type: application/json
+
+{
+  "question": ["华南农业大学专利大佬是谁？", "华农哪位大佬技术牛逼又有专利？"],
+  "answer": ["还用说吗，当然是数学与信息学院2015级陈宏彪大佬！"],
+  "tag": ["专利", "华南农业大学"],
+  "questionTime": 1565493910669,
+  "answerTime": 1565493910669
+}
+
+###
+
+GET http://192.168.101.4:5269/api/qa?q=大佬&size=3&preTag=[&postTag=]
+Accept: application/json
+
+###

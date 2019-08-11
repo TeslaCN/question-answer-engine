@@ -1,0 +1,40 @@
+{
+  "mappings": {
+    "properties": {
+      "id": {
+        "type": "keyword"
+      },
+      "question": {
+        "type": "text",
+        "analyzer": "ik_smart",
+        "fields": {
+          "maxWord": {
+            "type": "text",
+            "analyzer": "ik_max_word"
+          }
+        }
+      },
+      "answer": {
+        "type": "text",
+        "analyzer": "ik_smart",
+        "fields": {
+          "maxWord": {
+            "type": "text",
+            "analyzer": "ik_max_word"
+          }
+        }
+      },
+      "tag": {
+        "type": "keyword"
+      },
+      "questionTime": {
+        "type": "date",
+        "format": "epoch_millis"
+      },
+      "answerTime": {
+        "type": "date",
+        "format": "epoch_millis"
+      }
+    }
+  }
+}

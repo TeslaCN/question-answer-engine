@@ -1,0 +1,9 @@
+{
+  "elasticsearch": {
+    "hosts": [
+      "http://es.0:49204"
+    ]
+  },
+  "server": ":5269",
+  "qaIndex": "question-answer"
+}
